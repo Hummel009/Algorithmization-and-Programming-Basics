@@ -2,17 +2,16 @@ Program Lab4;
 
 {$APPTYPE CONSOLE}
 
-Uses
+uses
   SysUtils,
-  Unit1 In 'Unit1.pas';
+  Unit1 in 'OAiP\Lab 2.4\Unit1.pas';
 
 Var
   A: TMatrix = ((1, -1, 0), (2, 0, -1), (1, 1, 1));
   B: TMatrix = ((5, 3, 1), (-1, 2, 0), (-3, 0, 0));
   C1, C2, C3, C4, C5: TMatrix;
 
-{$i Project2.pas}
-
+{$i Unit2.pas}
 Begin
   Disp(A);
   Writeln;
