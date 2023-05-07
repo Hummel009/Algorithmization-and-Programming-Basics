@@ -1,12 +1,12 @@
 Program HummelCalc;
 
+{$MODE Delphi}
+
 uses
-  Forms,
+  Forms, Interfaces,
   UnitMain in 'UnitMain.pas' {FormMain},
   UnitHist in 'UnitHist.pas' {FormHist},
   UnitTrig in 'UnitTrig.pas' {FormTrig};
-
-{$R *.res}
 
 Begin
   Application.Initialize;

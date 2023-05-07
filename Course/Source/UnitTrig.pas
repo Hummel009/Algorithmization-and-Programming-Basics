@@ -1,5 +1,7 @@
 Unit UnitTrig;
 
+{$MODE Delphi}
+
 Interface
 
 Uses
@@ -77,7 +79,7 @@ Implementation
 
 Uses UnitMain;
 
-{$R *.dfm}
+{$R *.lfm}
 
 Procedure TFormTrig.btnCtgClick(Sender: TObject);
 Begin

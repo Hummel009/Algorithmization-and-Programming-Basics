@@ -1,5 +1,7 @@
 Unit UnitHist;
 
+{$MODE Delphi}
+
 Interface
 
 Uses
@@ -33,7 +35,7 @@ Var
 Implementation
 
 Uses UnitMain;
-{$R *.dfm}
+{$R *.lfm}
 
 //If pressed, load history from text file
 

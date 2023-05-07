@@ -1,4 +1,7 @@
 Unit UnitMain;
+
+{$MODE Delphi}
+
 {This program calculates ops on numbers}
 
 Interface
@@ -40,6 +43,9 @@ Type
   End;
 
   //GUI elements, procedures
+
+  { TFormMain }
+
   TFormMain = Class(TForm)
     btn1: TButton;
     btn2: TButton;
@@ -81,6 +87,7 @@ Type
     btnFloat: TButton;
     dlgOpen: TOpenDialog;
     lblRes: TLabel;
+    RadioButton1: TRadioButton;
 
     //This proc cals res depending on op
     //FRes - result
@@ -212,7 +219,7 @@ Implementation
 
 Uses UnitHist,
   UnitTrig;
-{$R *.dfm}
+{$R *.lfm}
 
 Procedure TFormMain.Calculate(Var FRes: Real);
 Begin
@@ -230,7 +237,7 @@ Begin
     EARCTG:
       FRes:= Arctan(GMem.Inp1);
     EARCCTG:
-      FRes:= Arccot(GMem.Inp1);
+      FRes:= 1 / Arctan(GMem.Inp1);
     ESIN:
       FRes:= Sin(GMem.Inp1);
     ECOS:
