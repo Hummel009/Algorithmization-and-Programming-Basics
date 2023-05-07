@@ -8,8 +8,10 @@
       <Unit>
         <Filename Value="Ex0101.lpr"/>
         <IsPartOfProject Value="True"/>
+        <UnitName Value="Razminka1"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos X="56" Y="11"/>
+        <TopLine Value="9"/>
+        <CursorPos X="40" Y="26"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit>
