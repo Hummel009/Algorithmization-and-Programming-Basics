@@ -1,4 +1,4 @@
-Program Razminka2_1;
+Program Ex0202;
 {This program calculates viruses' number for the last correct tick.}
 
 //Use app
@@ -10,7 +10,7 @@ Uses
 
 //Declare vars
 Var
-  Green, Red, Tick, SavedGreen, SavedRed, SavedTick, Temp, Error, I:Integer;
+  Green, Red, Tick, SavedGreen, SavedRed, SavedTick, Temp, Temp1, Temp2, Error, I:Integer;
   Input:String;
   Limit:Boolean;
   //Green, Red - the number of red and green viruses
@@ -18,6 +18,8 @@ Var
   //SavedGreen, SavedRed, SavedTick - last correct numbers
   //Input - input string
   //Temp - auxiliary argument
+  //Temp1 - saved pre-pre-data for the even tick
+  //Temp2 - saved pre-pre-data for the odd tick
   //Error - auxiliary operator for checking input
   //I - parameter for cycle
   //Limit - condition to finish the cycle
@@ -37,7 +39,7 @@ Begin
   //Checking for the correct input
   Repeat
     Write('Enter the number of green viruses: ');
-    ReadLn(Input);
+    ReadLn(Input);   
 
     //Error is bad symbol pos
     Val(Input, Green, Error);
@@ -48,7 +50,7 @@ Begin
   //Checking for the correct input
   Repeat
     Write('Enter the number of ticks: ');
-    ReadLn(Input);
+    ReadLn(Input);   
 
     //Error is bad symbol pos
     Val(Input, Tick, Error);
@@ -59,9 +61,12 @@ Begin
   //Integer limit is not exceeded yet
   Limit:= False;
 
+  //To prevent from random false value
   SavedGreen:= 0;
   SavedRed:= 0;
-  SavedTick:= 0;
+  SavedTick:= 0; 
+  Temp1:= 0;
+  Temp2:= 0;
 
   For I:= 1 To Tick Do
   Begin
@@ -70,10 +75,34 @@ Begin
     If (Limit = False) Then
     Begin
 
-      //Searching for the new number of viruses
-      Temp:= Green + Red;
-      Red:= Green;
-      Green:= Temp;
+      //First tick has no pre-pre step
+      If I = 1 Then
+      Begin
+        Temp1:= Green;
+        Temp:= Green + Red;
+        Red:= Green;
+        Green:= Temp;
+        Temp2:= Green;
+      End
+      Else
+      Begin
+
+        //Even tick
+        If I Mod 2 = 0 Then
+        Begin
+          Red:= Green;
+          Green:= Temp1 + Temp2;
+          Temp1:= Green;
+        End;
+
+        //Odd tick
+        If I Mod 2 = 1 Then
+        Begin
+          Red:= Green;
+          Green:= Temp1 + Temp2;
+          Temp2:= Green;
+        End;
+      End;
 
       //Searching for correct numbers before integer Limit
       If (Green >= 0) And (Red >= 0) And ((Green + Red) >= 0) Then
@@ -85,14 +114,15 @@ Begin
       Else
       Begin
 
-        //Integer limit was exceeded
+        //Integer Limit was exceeded
         WriteLn('Out of limit during the tick ', I, '. Here is the last correct values.');
         Limit:= True;
       End;
     End;
   End;
-
+  
   //Displaying the solution
   WriteLn('Tick: ', SavedTick, '; Red: ', SavedRed, '; Green: ', SavedGreen, '; Sum: ', SavedRed + SavedGreen);
   ReadLn;
 End.
+

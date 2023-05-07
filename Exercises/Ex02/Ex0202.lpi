@@ -9,7 +9,7 @@
         <MainUnitHasScaledStatement Value="False"/>
       </Flags>
       <SessionStorage Value="InProjectDir"/>
-      <Title Value="Ex01021;"/>
+      <Title Value="Ex0202;"/>
       <UseAppBundle Value="False"/>
       <ResourceType Value="res"/>
     </General>
@@ -25,7 +25,7 @@
     </RunParams>
     <Units>
       <Unit>
-        <Filename Value="Ex01021.lpr"/>
+        <Filename Value="Ex0202.lpr"/>
         <IsPartOfProject Value="True"/>
       </Unit>
     </Units>
@@ -34,7 +34,7 @@
     <Version Value="11"/>
     <PathDelim Value="\"/>
     <Target>
-      <Filename Value="Ex01021"/>
+      <Filename Value="Ex0202"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>

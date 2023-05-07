@@ -1,4 +1,4 @@
-Program Razminka2_3;
+Program Ex0203;
 {This program calculates viruses' number for the last correct tick.}
 
 //Use app
