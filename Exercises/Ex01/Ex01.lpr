@@ -1,4 +1,4 @@
-Program Razminka1;
+Program Ex01;
 {This program calculates quantity of monks for every Rank. Initial data are portions, numbers of all monks and cakes.}
 
 //use app
