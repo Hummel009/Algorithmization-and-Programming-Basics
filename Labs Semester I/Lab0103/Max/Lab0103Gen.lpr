@@ -1,4 +1,4 @@
-Program Lab3Part2Generator;
+Program Lab0103Generator;
 {Find the biggest duplicate of array}
 
 //Use app

@@ -1,4 +1,4 @@
-Program Lab5;
+Program Lab0105;
 {For a given function f, calculate it's value with precision 0,00001; 0,000001 and x = 0.1; 0.2 ... 1.0 with a step h = 0.1.}
 
 //Use app

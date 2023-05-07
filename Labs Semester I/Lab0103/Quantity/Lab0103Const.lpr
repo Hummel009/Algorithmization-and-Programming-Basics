@@ -1,4 +1,4 @@
-Program Lab3Part1Const;
+Program Lab0103Const;
 {Find elements of array without duplicates and their quantity}
 
 //Use app

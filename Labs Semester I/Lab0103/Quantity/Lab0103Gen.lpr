@@ -1,4 +1,4 @@
-Program Lab3Part1Generator;
+Program Lab0103Generator;
 {Find elements of array without duplicates and their quantity}
 
 //Use app

@@ -1,4 +1,4 @@
-Program Lab1;
+Program Lab0101;
 {For a given function f, calculate it's value for n = 10; 11 ... 15 and x = 0.6; 0.7 ... 1.1 with a step h = 0.1.}
 
 //Use app

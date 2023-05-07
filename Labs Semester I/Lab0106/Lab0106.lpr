@@ -1,4 +1,4 @@
-Program Lab6;
+Program Lab0106;
 {This program calculates the day of the week from the date}
 
 //Use app

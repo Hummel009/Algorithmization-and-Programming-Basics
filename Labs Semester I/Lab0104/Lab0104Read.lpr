@@ -1,4 +1,4 @@
-Program Lab4_Read;
+Program Lab0104Read;
 {Find and display a chain of elements on diagonals of the matrix}
 
 //Use app

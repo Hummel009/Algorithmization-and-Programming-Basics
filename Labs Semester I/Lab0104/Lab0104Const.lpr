@@ -1,4 +1,4 @@
-Program Lab4_Const;
+Program Lab0104Const;
 {Find and display a chain of elements on diagonals of the matrix}
 
 //Use app

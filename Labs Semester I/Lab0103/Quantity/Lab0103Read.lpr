@@ -1,4 +1,4 @@
-Program Lab3Part1Read;
+Program Lab0103Read;
 {Find elements of array without duplicates and their quantity}
 
 //Use app

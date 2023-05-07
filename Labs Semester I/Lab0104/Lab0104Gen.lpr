@@ -1,4 +1,4 @@
-Program Lab4_Gen;
+Program Lab0104Gen;
 {Find and display a chain of elements on diagonals of the matrix}
 
 //Use app

@@ -1,4 +1,4 @@
-Program Lab4_Var;
+Program Lab0104Var;
 {Find and display a chain of elements on diagonals of the matrix}
 
 //Use app

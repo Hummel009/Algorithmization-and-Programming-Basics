@@ -1,4 +1,4 @@
-Program Lab3Part2Const;
+Program Lab0103Const;
 {Find the biggest duplicate of array}
 
 //Use app

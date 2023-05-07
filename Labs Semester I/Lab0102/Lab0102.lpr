@@ -1,4 +1,4 @@
-Program Lab2;
+Program Lab0102;
 {For a given numbers, calculate it's gcd}
 
 //Use app
