@@ -1,5 +1,7 @@
 Unit Unit1;
 
+{$MODE Delphi}
+
 Interface
 
 Uses
@@ -179,7 +181,7 @@ Begin
   End;
 End;
 
-{$R *.dfm}
+{$R *.lfm}
 
 Procedure TForm1.btnKillClick(Sender: TObject);
 Var
