@@ -1,4 +1,4 @@
-Program Razminka3;
+Program Ex03;
 {This program calculates the best way how to buy user`s number of floppy disks}
 
 //Use app
